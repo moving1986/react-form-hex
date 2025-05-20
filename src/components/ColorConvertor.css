@@ -1,0 +1,44 @@
+.color-converter {
+    width: 1200px;
+    border: 1px solid #000;
+    min-height: 100vh;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+.converter {
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 8px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.hex-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Поле ввода с ошибкой */
+  .hex-input.input-error {
+    border-color: red;
+  }
+  
+  /* Блок вывода RGB */
+  .rgb-output {
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    text-align: center;
+    font-family: monospace;
+  }
+  
+  /* Текст ошибки */
+  .color-converter.error .rgb-output {
+    color: red;
+    font-weight: bold;
+  }
